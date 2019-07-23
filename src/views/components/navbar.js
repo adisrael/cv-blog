@@ -15,11 +15,11 @@ class NavItem extends Component {
   render() {
     if (this.props.active) {
       return (
-        <a className="active" onClick={this.onClick}>{this.props.title}</a>
+        <button className="active" onClick={this.onClick}>{this.props.title}</button>
       )
     } else {
       return (
-        <a onClick={this.onClick}>{this.props.title}</a>
+        <button onClick={this.onClick}>{this.props.title}</button>
       )
     }
 
