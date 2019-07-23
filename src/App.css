@@ -1,33 +1,66 @@
-.App {
+/* Title */
+h1 {
+  margin-left: 2%;
+  margin-right: 0;
+  margin-top: 2%;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1rem;
+  color: hsla(0,0%,0%,1);
+  font-family: 'Raleway',sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 3.5em;
+  line-height: 1.1;
+}
+
+/* Content */
+
+p.main-desc {
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 0;
+  margin-top: 2%;
+  /* padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; */
+  margin-bottom: 1rem;
+  color: hsla(0,0%,0%,1);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 1em;
+  line-height: 1.1;
+}
+
+/* NavBar */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  width: 35%;
+  margin-left: 3%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+li a:hover {
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a.active {
+  color: red;
 }
