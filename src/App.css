@@ -1,3 +1,34 @@
+/* NavBar */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  width: 40%;
+  margin-left: 3%;
+}
+
+li {
+  float: left;
+}
+
+li button {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+li button:hover {
+  color: red;
+}
+
+li button.active {
+  color: red;
+}
+
 /* Title */
 h1 {
   margin-left: 2%;
@@ -33,35 +64,4 @@ p.main-desc {
   text-rendering: optimizeLegibility;
   font-size: 1em;
   line-height: 1.1;
-}
-
-/* NavBar */
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  width: 40%;
-  margin-left: 3%;
-}
-
-li {
-  float: left;
-}
-
-li button {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border: none;
-}
-
-li button:hover {
-  color: red;
-}
-
-li button.active {
-  color: red;
 }
