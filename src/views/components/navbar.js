@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import infoEn from '../../assets/info-en.js';
+import infoEs from '../../assets/info-es.js';
 
 class NavItem extends Component {
   constructor(props) {
@@ -29,17 +31,44 @@ class NavBar extends Component {
     super(props);
     this.onClick = this.onClick.bind(this)
     this.state = {
-      sections: [
-        {title:'About Me', active:true, info: [
-          "Computer science & software engineering student at Pontificia Universidad Católica de Chile (PUC).",
-          "Interested in web/mobile development, artificial intelligence and game development.",
-          "Passionate about science and technology. Love gaming but I'm not a hardcore gamer. Enjoy music, sports and travelling around the globe."
-        ]},
-        {title:'Education', active:false, info: []},
-        {title:'Experience', active:false, info: []},
-        {title:'Projects', active:false, info: []},
-        {title:'Skills', active:false, info: []}
-      ],
+      sections: [],
+    }
+  }
+
+  // shouldComponentUpdate(nextState, nextProps) {
+    // if (nextProps.lang !== this.props.lang) {
+    //   return true;
+    // }
+    // else {
+    //   return false;
+    // }
+  // }
+
+  componentDidUpdate(prevProps) {
+    // if (this.props.lang !== prevProps.lang) {
+    //   if (this.props.lang === 'EN') {
+    //     this.setState({
+    //       sections: [...infoEn],
+    //     })
+    //   }
+    //   else {
+    //     this.setState({
+    //       sections: [...infoEs],
+    //     })
+    //   }
+    // }
+  }
+
+  componentDidMount() {
+    if (this.props.lang === 'EN') {
+      this.setState({
+        sections: [...infoEn],
+      })
+    }
+    else {
+      this.setState({
+        sections: [...infoEs],
+      })
     }
   }
 
