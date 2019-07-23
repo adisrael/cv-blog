@@ -47,7 +47,11 @@ h1 {
   line-height: 1.1;
 }
 
+/* Contact */
+
 /* Content */
+
+/* About Me */
 
 p.main-desc {
   width: 35%;
@@ -65,3 +69,112 @@ p.main-desc {
   font-size: 1em;
   line-height: 1.1;
 }
+
+/* Education */
+
+div.edu-header {
+  margin-top: 3%;
+  width: 90%;
+  align-content:space-around;
+}
+
+div.edu-school {
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 0;
+  /* margin-top: 2%; */
+  margin-bottom: 1%;
+  /* padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; */
+  /* margin-bottom: 1rem; */
+  color: hsla(0,0%,0%,1);
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: 1.35em;
+  line-height: 1;
+  display: inline-block;
+}
+
+div.edu-location {
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 0;
+  /* margin-top: 2%; */
+  /* padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; */
+  /* margin-bottom: 1rem; */
+  color: hsla(0,0%,0%,1);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 0.9em;
+  line-height: 0.25;
+  display: inline-block;
+}
+
+div.edu-content {
+  width: 90%;
+  align-content:space-around;
+}
+
+div.edu-years {
+  width: 35%;
+  margin-left: 2%;
+  margin-right: 0;
+  /* margin-top: 2%; */
+  /* padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; */
+  /* margin-bottom: 1rem; */
+  color: hsla(0,0%,0%,1);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 0.9em;
+  line-height: 0.25;
+  display: inline-block;
+}
+
+div.edu-text {
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 0;
+  margin-top: 1%;
+  /* padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; */
+  /* margin-bottom: 1rem; */
+  color: hsla(0,0%,0%,1);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 1em;
+  line-height: 0.9;
+  display: inline-block;
+}
+
+p.edu-awards {
+  width: 35%;
+  margin-left: 3%;
+  margin-right: 0;
+  /* margin-top: 2%; */
+  /* padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0; */
+  /* margin-bottom: 1rem; */
+  color: hsla(0,0%,0%,1);
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+  font-size: 0.8em;
+  line-height: 0.5;
+}
+
+/* Experience */
+
+/* Projects */
+
+/* Skills */

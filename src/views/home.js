@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-import Title from './components/header';
 import NavBar from './components/navbar';
+import Title from './components/header';
+import Contact from './contact';
+import AboutMe from './aboutMe';
+import Education from './education';
+import Experience from './experience';
+import Projects from './projects';
+import Skills from './skills';
 
 class Home extends Component {
   constructor(props) {
@@ -34,32 +40,34 @@ class Home extends Component {
     // }
   }
 
+  generateTabs(info) {
+    switch (this.state.categoryTitle) {
+      case 'About Me':
+        return <AboutMe info={info}/>
+      case 'Education':
+        return <Education info={info}/>
+      case 'Experience':
+        return <Experience info={info}/>
+      case 'Projects':
+        return <Projects info={info}/>
+      case 'Skills':
+        return <Skills info={info}/>  
+      default:
+        return null;
+    }
+  }
+
   render() {
     return (
     <div>
       <Title title="ALEXANDER ISRAEL NAVON"/>
 
+      <Contact />
+
       <NavBar current={this.state.categoryTitle} onChange={this.onChange} lang={this.state.lang}/>
 
-      {this.state.categoryTitle === 'About Me'?
-      <div className="content">
-        {this.state.categoryInfo.map((info, id) => (
-          <p className="main-desc" key={id}>{info}</p>
-        ))}
-      </div>
-      :
-      <div className="content">
-        {this.state.categoryInfo.map((info, id) => (
-          <div key={id}>
-            <p className="edu-school" key={(id+2)**1}>{info[0]}</p>
-            <p className="edu-degree" key={(id+2)**2}>{info[1]}</p>
-            <p className="edu-location" key={(id+2)**3}>{info[2]}</p>
-            <p className="edu-years" key={(id+2)**4}>{info[3]}</p>
-            <p className="edu-awards" key={(id+2)**5}>{info[4]}</p>
-          </div>
-        ))}
-      </div>
-      }
+      {this.generateTabs(this.state.categoryInfo)}
+
     </div>
     )
   }
