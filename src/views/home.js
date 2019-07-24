@@ -62,7 +62,7 @@ class Home extends Component {
     <div>
       <Title title="ALEXANDER ISRAEL NAVON"/>
 
-      <Contact />
+      <Contact lang={this.state.lang}/>
 
       <NavBar current={this.state.categoryTitle} onChange={this.onChange} lang={this.state.lang}/>
 
