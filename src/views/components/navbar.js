@@ -15,11 +15,11 @@ class NavItem extends Component {
   render() {
     if (this.props.active) {
       return (
-        <button className="active" onClick={this.onClick}>{this.props.title}</button>
+        <button className="NavItem-active" onClick={this.onClick}>{this.props.title}</button>
       )
     } else {
       return (
-        <button onClick={this.onClick}>{this.props.title}</button>
+        <button className="NavItem" onClick={this.onClick}>{this.props.title}</button>
       )
     }
 
@@ -95,11 +95,11 @@ class NavBar extends Component {
 
   render() {
     return (
-      <ul>
-        {this.state.sections.map((section, id) => (
-          <li key={id}><NavItem title={section.title} active={section.active} onClick={this.onClick} key={id} id={id}/></li>
-        ))}
-      </ul>
+      <div className="NavBar">
+          {this.state.sections.map((section, id) => (
+            <NavItem title={section.title} active={section.active} onClick={this.onClick} key={id} id={id}/>
+          ))}
+      </div>
     )
   }
 }
