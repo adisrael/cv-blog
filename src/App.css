@@ -47,6 +47,7 @@ button.NavItem-active:focus {
 }
 
 /* Title */
+
 h1 {
   margin-left: 2%;
   margin-right: 0;
@@ -57,11 +58,30 @@ h1 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: hsla(0,0%,0%,1);
-  font-family: 'Raleway',sans-serif;
+  font-family: 'Helvetica Neue',sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 3.5em;
   line-height: 1.1;
+  width: 60%;
+  text-align: center;
+
+  background-image: linear-gradient(120deg, yellow 0%, yellow 100%);
+  background-blend-mode: color;
+  background-size: 70% 0.3em;
+  background-repeat: no-repeat;
+  background-position: 0px 90%;
+  transition: background-size 0.25s ease-in 0s;
+  transition-property: background-size;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+h1:hover {
+  background-size: 85% 100%;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
 }
 
 /* Contact */

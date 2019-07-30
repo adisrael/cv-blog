@@ -59,8 +59,9 @@ class Home extends Component {
 
   render() {
     return (
-    <div>
-      <Title title="ALEXANDER ISRAEL NAVON"/>
+    <div className="App-content">
+
+      <Title title="ALEXANDER ISRAEL N."/>
 
       <Contact lang={this.state.lang}/>
 
