@@ -86,6 +86,45 @@ h1:hover {
 
 /* Contact */
 
+div.contact-container {
+  padding: 1%;
+  width: 60%;
+  text-align: center;
+}
+
+a.contact {
+  color: gray;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+a.contact:hover {
+  color: black;
+  background: #66ff66;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* text-decoration:underline; */
+  /* box-shadow: 1px 1px 0px 0px black; */
+}
+
+a.contact:visited:hover {
+  color: black;
+  background:#66ff66;
+  /* text-decoration:underline; */
+  /* box-shadow: 1px 1px 0px 0px black; */
+}
+
+a.contact:visited {
+  color: gray;
+  /* color: gray; */
+}
+
+a.contact:active {
+  color: gray;
+}
+
 /* Content */
 
 /* About Me */
