@@ -59,10 +59,11 @@ class Home extends Component {
 
   render() {
     return (
-    <div>
-      <Title title="ALEXANDER ISRAEL NAVON"/>
+    <div className="App-content">
 
-      <Contact />
+      <Title title="ALEXANDER ISRAEL N."/>
+
+      <Contact lang={this.state.lang}/>
 
       <NavBar current={this.state.categoryTitle} onChange={this.onChange} lang={this.state.lang}/>
 
