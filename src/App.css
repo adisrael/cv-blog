@@ -1,35 +1,53 @@
 /* NavBar */
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  width: 40%;
-  margin-left: 3%;
+div.NavBar {
+  width: 60%;
+  align-content:space-around;
+  /* text-align: center; */
+  padding: 1%;
 }
 
-li {
-  float: left;
-}
-
-li button {
+button.NavItem {
+  margin: 0;
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   border: none;
+  font-size: 1em;
+  font-weight: 300;
+  display: inline-block;
 }
 
-li button:hover {
+button.NavItem:hover {
   color: red;
 }
 
-li button.active {
+button.NavItem:focus {
+  border: none;
+  outline: 0;
+}
+
+button.NavItem-active {
+  margin: 0;
+  display: block;
   color: red;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  display: inline-block;
+}
+
+button.NavItem-active:focus {
+  border: none;
+  outline: 0;
 }
 
 /* Title */
+
 h1 {
   margin-left: 2%;
   margin-right: 0;
@@ -40,14 +58,72 @@ h1 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: hsla(0,0%,0%,1);
-  font-family: 'Raleway',sans-serif;
+  font-family: 'Helvetica Neue',sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 3.5em;
   line-height: 1.1;
+  width: 60%;
+  text-align: center;
+
+  background-image: linear-gradient(120deg, yellow 0%, yellow 100%);
+  background-blend-mode: color;
+  background-size: 70% 0.3em;
+  background-repeat: no-repeat;
+  background-position: 0px 90%;
+  transition: background-size 0.25s ease-in 0s;
+  transition-property: background-size;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+h1:hover {
+  background-size: 85% 100%;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
 }
 
 /* Contact */
+
+div.contact-container {
+  padding: 1%;
+  width: 60%;
+  text-align: center;
+}
+
+a.contact {
+  color: gray;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+a.contact:hover {
+  color: black;
+  background: #66ff66;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* text-decoration:underline; */
+  /* box-shadow: 1px 1px 0px 0px black; */
+}
+
+a.contact:visited:hover {
+  color: black;
+  background:#66ff66;
+  /* text-decoration:underline; */
+  /* box-shadow: 1px 1px 0px 0px black; */
+}
+
+a.contact:visited {
+  color: gray;
+  /* color: gray; */
+}
+
+a.contact:active {
+  color: gray;
+}
 
 /* Content */
 
