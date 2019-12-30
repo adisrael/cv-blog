@@ -5,7 +5,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useLocation,
 } from "react-router-dom";
 
 class App extends Component {
@@ -64,8 +65,11 @@ class App extends Component {
             <Route path="/dashboard">
               <Dashboard />
             </Route> */}
-            <Route exact path=".well-known/acme-challenge/LBuOQ1fqmhtF81U8cdvjt25vO9uknWhRAFv1bEdOisI">
+            <Route exact path="/.well-known/acme-challenge/LBuOQ1fqmhtF81U8cdvjt25vO9uknWhRAFv1bEdOisI">
               <Certbot />
+            </Route>
+            <Route path="*">
+              <NoMatch />
             </Route>
           </Switch>
         </div>
@@ -77,6 +81,18 @@ class App extends Component {
 function Certbot() {
   return (
     "LBuOQ1fqmhtF81U8cdvjt25vO9uknWhRAFv1bEdOisI.4f8cJWG471h_xzaArV9sMiuAfqw7Zy6QriFRDH5uXOM"
+  );
+}
+
+function NoMatch() {
+  let location = useLocation();
+
+  return (
+    <div>
+      <h3>
+        Lo siento! No se ha encontrado la ruta: <code style={{color: 'red'}}>{location.pathname}</code>
+      </h3>
+    </div>
   );
 }
 
