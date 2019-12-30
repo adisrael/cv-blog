@@ -65,9 +65,9 @@ class App extends Component {
             <Route path="/dashboard">
               <Dashboard />
             </Route> */}
-            {/* <Route path="*">
+            <Route path="*">
               <NoMatch />
-            </Route> */}
+            </Route>
           </Switch>
         </div>
       </Router>
