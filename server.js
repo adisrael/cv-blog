@@ -2,11 +2,11 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'build')))
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.get('/', (req, res) => {
   res.status(200);
-  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 });
 
 app.get('/.well-known/acme-challenge/Pgy-4adoAqOpRtrXDJeQrwlZELvSxSVuxnHILgrd7VE', (req, res) => {
@@ -19,11 +19,11 @@ app.get('/hey', (req, res) => {
 })
 
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('build'));
+	app.use(express.static('client/build'));
 }
 
 app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'build', 'index.html'));
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 app.listen(process.env.PORT || 8080);
