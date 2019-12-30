@@ -70,7 +70,7 @@ h1 {
   background-blend-mode: color;
   background-size: 70% 0.3em;
   background-repeat: no-repeat;
-  background-position: 0px 90%;
+  background-position: 15px 90%;
   transition: background-size 0.25s ease-in 0s;
   transition-property: background-size;
   transition-duration: 0.25s;
@@ -146,20 +146,20 @@ p.main-desc {
   line-height: 1.1;
 }
 
-/* Education */
+/* CV Item */
 
-div.edu-header {
+div.cv-item-header {
   margin-top: 3%;
   width: 90%;
   align-content:space-around;
 }
 
-div.edu-school {
+div.cv-item-title {
   width: 35%;
   margin-left: 3%;
   margin-right: 0;
   /* margin-top: 2%; */
-  margin-bottom: 1%;
+  margin-bottom: 0.6%;
   /* padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -173,7 +173,7 @@ div.edu-school {
   display: inline-block;
 }
 
-div.edu-location {
+div.cv-item-location {
   width: 35%;
   margin-left: 3%;
   margin-right: 0;
@@ -187,18 +187,37 @@ div.edu-location {
   font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 0.9em;
-  line-height: 0.25;
+  line-height: 1;
   display: inline-block;
 }
 
-div.edu-content {
+div.cv-item-content {
   width: 90%;
   align-content:space-around;
 }
 
-div.edu-years {
+div.cv-item-type {
   width: 35%;
-  margin-left: 2%;
+  margin-left: 5%;
+  margin-right: 0;
+  /* margin-top: 2%; */
+  /* margin-bottom: 0.6%; */
+  /* padding-bottom: 0;
+  padding-left: 0; */
+  padding-right: 2.5%;
+  padding-top: 2.5%; 
+  /* margin-bottom: 1rem; */
+  color: rgb(139, 139, 139);
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: 1.35em;
+  line-height: 1;
+  display: inline-block;
+}
+
+div.cv-item-date {
+  width: 25%;
+  margin-left: 3%;
   margin-right: 0;
   /* margin-top: 2%; */
   /* padding-bottom: 0;
@@ -210,33 +229,33 @@ div.edu-years {
   font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 0.9em;
-  line-height: 0.25;
+  line-height: 1;
   display: inline-block;
 }
 
-div.edu-text {
-  width: 35%;
+div.cv-item-text {
+  width: 45%;
   margin-left: 3%;
   margin-right: 0;
-  margin-top: 1%;
+  margin-top: 0%;
   /* padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0; */
-  /* margin-bottom: 1rem; */
+  margin-bottom: 0.5%;
   color: hsla(0,0%,0%,1);
   font-weight: 400;
   text-rendering: optimizeLegibility;
-  font-size: 1em;
-  line-height: 0.9;
+  font-size: 1.1em;
+  line-height: 1;
   display: inline-block;
 }
 
-p.edu-awards {
-  width: 35%;
-  margin-left: 3%;
+div.cv-item-desc {
+  width: 40%;
+  margin-left: 3.5%;
   margin-right: 0;
-  /* margin-top: 2%; */
+  margin-top: 0.25%;
   /* padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -245,8 +264,8 @@ p.edu-awards {
   color: hsla(0,0%,0%,1);
   font-weight: 100;
   text-rendering: optimizeLegibility;
-  font-size: 0.8em;
-  line-height: 0.5;
+  font-size: 1em;
+  line-height: 1.25;
 }
 
 /* Experience */
