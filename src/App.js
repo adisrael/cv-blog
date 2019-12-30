@@ -65,23 +65,14 @@ class App extends Component {
             <Route path="/dashboard">
               <Dashboard />
             </Route> */}
-            <Route exact path="/.well-known/acme-challenge/LBuOQ1fqmhtF81U8cdvjt25vO9uknWhRAFv1bEdOisI">
-              <Certbot />
-            </Route>
-            <Route path="*">
+            {/* <Route path="*">
               <NoMatch />
-            </Route>
+            </Route> */}
           </Switch>
         </div>
       </Router>
     );
   }
-}
-
-function Certbot() {
-  return (
-    "LBuOQ1fqmhtF81U8cdvjt25vO9uknWhRAFv1bEdOisI.4f8cJWG471h_xzaArV9sMiuAfqw7Zy6QriFRDH5uXOM"
-  );
 }
 
 function NoMatch() {
